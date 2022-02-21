@@ -1,0 +1,761 @@
+/*
+colors rgb(67, 71, 78) rgb(71, 71, 71) rgb(255, 112, 4) rgb(226, 226, 226) rgb(47, 51, 58)
+font Open Sans  Raleway
+*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/********************************************************/
+/*Hager Mohammed Abdo Abo Sheref*/
+
+/********************************************************/
+/* navbar1*/
+.navbar1{
+    padding: 1.875rem  0;
+}
+.navbar1 .container-fluid{
+    width: 80%;
+    height: 2.6rem;
+}
+.navbar1_logo{
+    width:10.75rem; 
+    height:2.5rem;
+}
+.navbar1_logo img{
+    width:100%;
+    height: 100%;
+}
+.navbar1 .navbar-nav .nav_item_padding{
+    padding-right: 2rem;
+}
+.navbar1 .navbar-nav .nav-link{
+    padding: 0;
+}
+.navbar1 .navbar-nav{
+    position: relative;
+}
+.navbar1_border1_rt{
+    background-color: rgb(235, 235, 235);
+    width: 2px;
+    height: 22px;
+    position: absolute;
+    left: 28%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar1_border2_rt{
+    background-color: rgb(235, 235, 235);
+    width: 2px;
+    height: 22px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar1 .navbar-nav .nav-item a svg{
+    fill: #000;
+    transition: all 0.4s ease;
+}
+.navbar1 .navbar-nav  a svg:hover{
+    fill: rgb(255, 112, 4);
+}
+.navbar1_counter{
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background-color: rgb(255, 112, 4);
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -8%;
+}
+.navbar1 .dropdown-toggle::after{ 
+    content: none;
+}
+.navbar1 .dropdown .dropdown-menu{
+    padding: 0;
+    border:none;
+    border-radius: 0%;
+    margin-top: 0.5rem;
+    position: absolute;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 3px 25.5px 4.5px  rgba(0,0,0,0.1);
+}
+.navbar1 .dropdown-menu li{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+}
+.navbar1 .dropdown-menu li a{
+    font-size: 12px;
+    padding: 10px;
+    line-height: 25px;
+    color: rgb(71, 71, 71);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    transition: all 0.4s ease;
+}
+.navbar1 .dropdown-menu li a:hover{
+    color: rgb(255, 112, 4);
+    background: none;
+}
+.nav1_icon_search{
+    border-radius: 0%;
+    border-right: 2px solid rgb(235, 235, 235);
+    padding: 0;
+    padding-right: 1.5rem;
+    transition: all 0.4s ease;
+}
+.nav1_icon_search:focus{
+    box-shadow: none;
+}
+.nav1_icon_search svg:hover{
+    fill:rgb(255, 112, 4);;
+}
+.nav1_icon_setting{
+    padding: 0;
+    padding-left: 1rem;
+    transition: all 0.4s ease;
+}
+.nav1_icon_setting svg:hover{
+    fill:rgb(255, 112, 4);;
+}
+.nav1_icon_setting:focus{
+    box-shadow: none; 
+}
+/********************************************************/
+/* navbar2*/
+.navbar2{
+    background-color: rgb(226, 226, 226);
+}
+.navbar2 .container-fluid{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar2 .navbar-nav a{
+    color:rgb(47, 51, 58);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    display: flex;
+}
+.navbar2 .navbar-nav a:hover{
+    color: rgb(255, 112, 4);
+    background: none;
+}
+.navber2_arrowdown{
+    padding-left: 3px;
+    fill:#000;
+    transition: all 0.4s ease;
+}
+.navbar2 .navbar-nav a:hover .navber2_arrowdown{
+    fill: rgb(255, 112, 4);
+}
+.navbar2 .dropdown-menu{
+    padding: 0;
+    border:none;
+    border-radius: 0%;
+    margin-top: 0.5rem;
+}
+.navbar2 .dropdown-menu li{
+    width:12.813rem;
+    height: 2.5rem;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+}
+.navbar2 .dropdown-toggle::after{
+    content:none;
+}
+.navbar2_menuIcons svg{
+    fill:#000;
+    transition: all 0.4s ease;
+}
+.navbar2_menuIcons svg:hover{
+    fill:rgb(255, 112, 4);
+}
+.navbar2_menuIcons:focus{
+    box-shadow:none;
+}
+
+/********************************************************/
+/*carousel*/
+.carousel{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.carousel-caption{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:min-content;
+    width: 80%;
+}
+.carousel-caption h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    animation: h4 2s;
+    transform: translateY(0px);
+}
+@keyframes h4{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.carousel-caption h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: h2 2.5s;
+    transform: translateY(0px);
+}
+@keyframes h2{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.carousel-caption p{
+    width: 40%;
+    margin-bottom:0;
+    margin: auto;
+    animation: p 3.5s;
+    transform: translateY(0px);
+}
+@keyframes p{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.carousel-caption button{
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    border: none;
+    height: 3rem;
+    width: 9rem;
+    background-color: rgb(255, 112, 4);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    margin-top:3rem;
+    animation: btn 4.5s;
+    transform: translateY(0px)
+}
+@keyframes btn{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.carousel-caption button:hover{
+    background-color: #000;
+    color:rgb(255, 112, 4);
+}
+.carousel .control_bg{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 0.875em;
+    transition: all 0.4s ease;
+    opacity: 1;
+}
+.carousel .control_bg:hover{
+    background-color: rgb(255, 112, 4);
+    color:#fff;
+}
+.carousel .carousel_controls_btns{
+    visibility: hidden;
+}
+.carousel .carousel-control-prev .control_bg{
+    position: absolute;
+    left: 5%;
+}
+.carousel:hover .carousel-control-prev{
+    visibility: visible;
+    animation: controls_prev 1s;
+    transform: translateX(0)
+}
+@keyframes controls_prev{
+    0%{
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.carousel .carousel-control-next .control_bg{
+    position: absolute;
+    right: 5%;
+}
+.carousel:hover .carousel-control-next{
+    visibility: visible;
+    animation: controls_next 1s;
+    transform: translateX(0)
+}
+@keyframes controls_next{
+    0%{
+        transform: translateX(30%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.carousel-indicators [data-bs-target]{
+    width:0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background: none;
+}
+.carousel-indicators .active{
+    background-color:rgb(255, 112, 4);
+    border: 2px solid rgb(255, 112, 4);
+}
+
+/********************************************************/
+/*Categories*/
+.Categories{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+.Categories .row{
+    padding: 0 3rem;
+}
+.Categories .col{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Categories .col a{
+    text-decoration: none;
+}
+.Category{
+    width: 11.25rem;
+    height: 11.25rem;
+    border: 2px solid rgb(67, 71, 78);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Category::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px dashed rgb(255, 112, 4);
+    visibility: hidden;
+}
+.Category:hover{
+    border: none;
+}
+.Category:hover::after{ 
+    visibility:visible;
+    animation: ro 10s linear infinite;
+}
+@keyframes ro{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.Category_title h4{
+    color:rgb(71, 71, 71);
+    margin-top: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/********************************************************/
+/*media    lg(992--1200) md(768--992) sm(576--768) */
+/*lg (992--1200)*/
+@media (max-width:1200px){
+    /********************************************************/
+    /*carousel*/
+    .carousel{
+        height: 90vh;
+    }
+    .carousel-caption h4{
+        font-size: 24px;
+    }
+    .carousel-caption h2{
+        font-size: 72px;
+    }
+    .carousel-caption p{
+        font-size: 16px;
+        width: 60%;
+    }
+    .carousel-caption button{
+        height: 50px;
+        width: 150px;
+        font-size:16px;
+        margin-top: 48px;
+    }
+    .carousel .control_bg{
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .carousel-indicators [data-bs-target]{
+        width:10px;
+        height: 10px;
+    }
+    /********************************************************/
+    /*Categories*/
+    .Categories .col{
+        padding: 0.5rem;
+    }
+}
+@media (max-width:992px){
+    /********************************************************/
+    /* navbar1*/
+    .navbar1{
+        padding: 15px 0;
+    }
+    .navbar1_logo {
+        width: 7rem;
+        height: auto;
+    }
+    .navbar1_logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .navbar2 .dropdown-menu{
+        width: 205px;
+    }
+    /********************************************************/
+    /*carousel*/
+    .carousel{
+        height: 80vh;
+    }
+    .carousel-caption h4{
+        font-size: 24px;
+    }
+    .carousel-caption h2{
+        font-size: 50px;
+    }
+    .carousel-caption p{
+        font-size: 16px;
+        width: 80%;
+    }
+    .carousel-caption button{
+        height: 50px;
+        width: 150px;
+        font-size: 16px;
+        margin-top: 48px;
+    }
+    .carousel .control_bg{
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .carousel-indicators [data-bs-target]{
+        width:  10px;
+        height: 10px;
+    }
+}
+@media (max-width:768px){
+    /********************************************************/
+    /* navbar1*/
+    .navbar1{
+        padding: 15px 0;
+    }
+    /********************************************************/
+    /*carousel*/
+    .carousel{
+        height: auto;
+    }
+    .d-none{
+        display: block !important;
+    }
+    .carousel-caption h4{
+        font-size: 24px;
+    }
+    .carousel-caption h2{
+        width: 100%;
+        font-size: 32px;
+    }
+    .carousel-caption p{
+        font-size: 16px;
+        width: 100%;
+    }
+    .carousel-caption button{
+        height: 46px;
+        width: 127px;
+        font-size: 16px;
+        margin-top:24px;
+    }
+    .carousel .control_bg{
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .carousel-indicators [data-bs-target]{
+        width:  10px;
+        height: 10px;
+    }
+    /********************************************************/
+}
+
+
+/********************************************************/
+/* Nadeen Mohammed*/
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+.a1
+{
+    color: rgb(255, 112, 4);;
+}
+.container a:hover
+{
+    color: rgb(255, 112, 4);
+}
+.container .main .img
+{
+    overflow: hidden;
+}
+.container .main .img img
+{
+    transition: 0.5s ease-in-out;
+}
+.container .main:hover .img img
+{
+    transform: scale(1.1);
+}
+.action
+{
+    top: 45px;
+    right: 25px;
+}
+.action li
+{
+    position: relative;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    padding-top: 3px;
+    padding-left: 5px;
+    margin: 4px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateX(70px);
+}
+.action .l2
+{
+    transition-delay: 0.15s;
+}
+.action .l3
+{
+    transition-delay:0.3s;
+}
+.container .main:hover .action li
+{
+    transform: translateX(0px);
+}
+.action li:hover
+{
+    background: rgb(255, 112, 4);
+    color: #fff;
+}
+.action li span
+{
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    transform: translateY(-50%) translateX(-20px);
+    margin-right: 0;
+    white-space: nowrap;
+    padding: 4px 60px;
+    color: #333;
+    font-weight: 500;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.action li:hover span
+{
+    transform: translateY(-50%) translateX(0px);
+    opacity: 1;
+    color: rgb(255, 112, 4);
+    font-weight: bold;
+}
+.action li span::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    transform: translateY(-50%) rotate(45deg);
+}
+.var a 
+{
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+.price
+{
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(33, 33, 33);
+    margin-top: 9px;
+}
+.price .new {
+    font-weight: 500;
+}
+.price .old {
+    margin-right: 10px;
+    color: rgb(153, 153, 153);
+}
+
+.ourproduct_h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+.ourproduct_p{
+    font-family: 'Open Sans', sans-serif;
+}
+/********************************************************/
+/* Hager Aziz*/
+.btn:hover, .btn:focus {
+    color: #fff;
+    background-color: rgb(255, 112, 4);
+    outline: 0;
+    box-shadow:none;
+    transition: all 0.4 ease;
+}
+.third {
+    color: #fff;
+    
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0%;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    font-weight: 600;
+    background-color: rgb(71, 71, 71);
+
+}
+.btn1:hover, .btn1:focus {
+    color: #fff;
+    background-color: rgb(71, 71, 71);
+    outline: 0;
+    box-shadow:none;
+    transition: all 0.4 ease;
+}
+.subscribe {
+    color: #fff;
+    
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0%;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    font-weight: 600;
+    background-color: rgb(255, 112, 4);
+
+}
+
+.latestnews_h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+.latestnews_p{
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.card_text1{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.card_text2{
+    font-weight: bold;
+    color: rgb(71, 71, 71);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.card_text3{
+    color: rgb(71, 71, 71);
+    margin: 0.5rem 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.footer_input{
+    outline: 0;
+    border: 2px solid rgb(67, 71, 78);
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(47, 51, 58);
+}
+.footer_input:focus{
+    border: 2px solid rgb(255, 112, 4);
+}
